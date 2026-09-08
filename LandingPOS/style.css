@@ -1,0 +1,270 @@
+/* ==========================================================================
+   GROCERQUICK POS - LANDING PAGE (PALETA AZUL ÁRTICO INVERNAL)
+   ========================================================================== */
+
+/* Reseteo Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f8fafc;
+    color: #0f2942;
+    line-height: 1.6;
+}
+
+/* 1. BARRA DE NAVEGACIÓN (NAVBAR) */
+.navbar {
+    background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 100%);
+    padding: 1.25rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(12, 74, 110, 0.15);
+}
+
+.nav-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.nav-logo span {
+    color: #38bdf8;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-left: 0.25rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #e0f2fe;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.btn-nav-login {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    color: #ffffff !important;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+    transition: all 0.25s ease !important;
+}
+
+.btn-nav-login:hover {
+    background: #ffffff !important;
+    color: #0369a1 !important;
+    transform: translateY(-1px);
+}
+
+/* 2. SECCIÓN HERO */
+.hero-section {
+    background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 40%, #f0f9ff 100%);
+    padding: 4rem 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.hero-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #0c4a6e;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+    letter-spacing: -1px;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: #334155;
+    margin-bottom: 2rem;
+    max-width: 480px;
+}
+
+.btn-hero {
+    display: inline-block;
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 0.9rem 1.8rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+    transition: all 0.25s ease;
+}
+
+.btn-hero:hover {
+    background: linear-gradient(135deg, #0369a1 0%, #0c4a6e 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(3, 105, 161, 0.45);
+}
+
+.hero-media {
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px -15px rgba(12, 74, 110, 0.25);
+    border: 3px solid #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+    transform: scale(1.02);
+}
+
+/* 3. SECCIÓN DE SERVICIOS */
+.services-section {
+    padding: 5rem 2rem;
+    background-color: #ffffff;
+}
+
+.services-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #0c4a6e;
+    margin-bottom: 3rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.service-card {
+    background: #ffffff;
+    border-radius: 1rem;
+    border: 1px solid #e0f2fe;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -5px rgba(14, 116, 144, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 35px -10px rgba(14, 116, 144, 0.18);
+    border-color: #bae6fd;
+}
+
+.card-image-wrapper {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background-color: #f1f5f9;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .card-image-wrapper img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 1.25rem 1rem;
+}
+
+.card-content h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0c4a6e;
+}
+
+/* 4. FOOTER */
+.site-footer {
+    background: #0f172a;
+    color: #94a3b8;
+    padding: 2rem;
+    border-top: 1px solid #1e293b;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.footer-brand span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.footer-info strong {
+    color: #38bdf8;
+}
+
+/* RESPONSIVO SIMPLIFICADO */
+@media (max-width: 900px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-description {
+        margin: 0 auto 2rem auto;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
