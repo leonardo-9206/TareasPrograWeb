@@ -1,8 +1,5 @@
-/* ==========================================================================
-   GROCERQUICK POS - LANDING PAGE (PALETA AZUL ÁRTICO INVERNAL)
-   ========================================================================== */
 
-/* Reseteo Global */
+/* reseteamos margenes */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +13,6 @@ body {
     line-height: 1.6;
 }
 
-/* 1. BARRA DE NAVEGACIÓN (NAVBAR) */
 .navbar {
     background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 100%);
     padding: 1.25rem 2rem;
@@ -83,7 +79,6 @@ body {
     transform: translateY(-1px);
 }
 
-/* 2. SECCIÓN HERO */
 .hero-section {
     background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 40%, #f0f9ff 100%);
     padding: 4rem 2rem;
@@ -151,7 +146,7 @@ body {
     transform: scale(1.02);
 }
 
-/* 3. SECCIÓN DE SERVICIOS */
+/* parte de los servicios */
 .services-section {
     padding: 5rem 2rem;
     background-color: #ffffff;
@@ -220,7 +215,6 @@ body {
     color: #0c4a6e;
 }
 
-/* 4. FOOTER */
 .site-footer {
     background: #0f172a;
     color: #94a3b8;
@@ -247,7 +241,6 @@ body {
     color: #38bdf8;
 }
 
-/* RESPONSIVO SIMPLIFICADO */
 @media (max-width: 900px) {
     .hero-container {
         grid-template-columns: 1fr;

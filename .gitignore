@@ -1,0 +1,5 @@
+node_modules/
+.env
+GUIA_TAREA_MYSQL2.md
+GUIA_FULLSTACK_COMPLETA.md
+dist/

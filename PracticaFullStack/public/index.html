@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            GrocerQuick POS - Panel Fullstack
+        </title>
+        <!-- Fuente moderna de google fonts -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?
+         family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class = "app-container">
+            <header class = "app-header">
+                <h1>
+                    GrocerQuick POS
+                </h1>
+                <p>
+                    Practica Fullstack: HTML + CSS + JS -> Express Backend
+                </p>
+            </header>
+            <main class = "main-content">
+                <!-- Formulario para enviar datos mediante POST-->
+                 <section class="card from-card">
+                    <h2> Agregar Nuevo Producto </h2>
+                    <form id="formProducto">
+                        <div class="input-group">
+                            <label for="nombre">Nombre del producto: </label>
+                            <input type="text" id="nombre" placeholder="Ej. Galletas Chokis" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="precio">Precio ($ MXN):</label>
+                            <input type="number" id="precio" step="0.50" placeholder="Ej 22.50" required>
+                        </div>
+                        <button type="submit" class="btn-submit">Guardar Producto</button>
+                    </form>
+                    <div id="mensajeEstado" class="estado-msg"></div>
+                 </section>
+
+                 <!-- Lista de productos consultados con GET-->
+                  <section class="card list-card">
+                    <div class="list-header">
+                        <h2> Inventario en Servidor </h2>
+                        <button id="btnCargar" class="btn-reload"> Recargar Lista</button>
+                    </div>
+                    <div id="contenedorProductos" class="productos-grid">
+                        <p class="loading-txt"> Cargando productos desde el servidor...</p>
+                    </div>
+                  </section>
+            </main>
+        </div>
+        <!-- Script de conexion JS-->
+         <script src="app.js"></script>
+    </body>
+</html>
