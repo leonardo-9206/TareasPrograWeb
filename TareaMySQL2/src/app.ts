@@ -2,7 +2,7 @@ import { Server } from './server.ts';
 import routes from './routes/index.ts';
 import dotenv from 'dotenv';
 
-//cargar variables del archivo .env
+// Load environment variables from .env file
 dotenv.config();
 
 const port = Number(process.env.PORT) || 3000;

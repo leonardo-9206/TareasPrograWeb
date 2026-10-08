@@ -3,7 +3,7 @@ import productsRoutes from './products.routes.ts';
 
 const router = Router();
 
-//agrupamos las rutas bajo /products
+// Mount products routes under /products
 router.use('/products', productsRoutes);
 
 export default router;

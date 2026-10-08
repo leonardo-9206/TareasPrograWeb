@@ -1,5 +1,5 @@
 // ==========================================================================
-// INTERFAZ DE PRODUCTO (TYPESCRIPT TYPE SAFETY)
+// PRODUCT MODEL INTERFACE (TYPESCRIPT TYPE SAFETY)
 // ==========================================================================
 
 export interface Product {

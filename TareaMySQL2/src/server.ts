@@ -18,18 +18,18 @@ export class Server {
   }
 
   public start = (): void => {
-    //habilitar permisos CORS
+    // Enable CORS middleware
     this.app.use(cors());
 
-    //habilitar lectura de JSON en peticiones POST/PUT/PATCH
+    // Enable JSON parsing for incoming requests
     this.app.use(express.json());
 
-    //montar las rutas bajo el prefijo /api/v1 
+    // Mount API routes under /api/v1
     this.app.use('/api/v1', this.routes);
 
-    //iniciar escucha en el puerto
+    // Start server listener
     this.app.listen(this.port, () => {
-      console.log(`Servidor MySQL2 TypeScript escuchando en http://localhost:${this.port}`);
+      console.log(`MySQL2 TypeScript Server running at http://localhost:${this.port}`);
     });
   };
 }
